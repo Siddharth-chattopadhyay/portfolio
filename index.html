@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint</title>
+
+    <!-- Webfonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-black position-relative">
+    <header class="position-absolute top-0 start-0 end-0" id="first">
+        <section class="bg-dark d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-center align-items-center text-white">
+                    <div class="col-5 d-flex align-items-center">
+                        <span class="d-inline-block p-3 bg-success me-2"><i class="bi bi-chat-left"></i></span>
+                        <span class="me-5 pe-5">Fox News Anchor Bret Baier...</span>
+                        <span class="d-flex align-items-center">
+                            <i class="bi bi-arrow-left-short fs-4"></i>
+                            <span class="d-inline-block mx-2 vr"></span>
+                            <i class="bi bi-arrow-right-short fs-4"></i>
+                        </span>
+                    </div>
+                    <div class="col-5 text-end">
+                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="icon-link icon-link-hover text-white bg-success p-3 px-4 align-items-center text-decoration-none"
+                            href="#">
+                            <span class="bi d-inline-block"><i class="fa-solid fa-angles-right d-block"></i></span>
+                            <span class="ms-2">
+                                Icon link
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-bottom border-secondary" style="--bs-border-opacity: .5;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="assets/images/header/logo.png" alt="logo" class="py-3">
+                        </a>
+                    </div>
+                    <div class="col-4 d-block d-md-none">
+
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        <ul class="nav justify-content-center custom-underline-nav">
+                            <li class="nav-item pt-2">
+                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item pt-2 ms-1">
+                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
+                                    href="#">About</a>
+                            </li>
+                            <li class="nav-item pt-2 ms-1">
+                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
+                                    href="#">Service</a>
+                            </li>
+                            <li class="nav-item pt-2 ms-1">
+                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
+                                    href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item pt-2 ms-1">
+                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
+                                    href="#">Pages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <div class="d-flex pt-2 align-items-center">
+                            <i class="bi bi-search text-success me-2 fw-bold fs-4"></i>
+                            <form action="" method="post" class="">
+                                <input type="text" id="search"
+                                    class="search-form form-control bg-black border-0 shadow-none text-white placeholder-light"
+                                    placeholder="Search">
+                            </form>
+                            <button class="d-inline-block position-relative py-4 px-4 btn border-0" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#about-header-page"
+                                aria-controls="about-header-page-label">
+                                <img src="assets/images/header/hamburger.svg">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center justify-content-end d-block d-md-none">
+                        <a class="text-white text-decoration-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navigator-bar" aria-controls="offcanvasRight">
+                            <i class="bi bi-list fs-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- main banner -->
+        <section class="main-banner pt-5">
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div id="main-banner" class="carousel slide carousel-fade">
+                <div class="carousel-indicators translate-middle flex-column row-gap-2 m-0">
+                    <button type="button" data-bs-target="#main-banner" data-bs-slide-to="0"
+                        class="active rounded-circle text-center" aria-current="true" aria-label="Slide 1">01</button>
+                    <button type="button" data-bs-target="#main-banner" data-bs-slide-to="1"
+                        class="rounded-circle text-center" aria-label="Slide 2">02</button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-uppercase display-3 fw-bold text-white mb-5">
+                                        <span class="text-success">imagination</span>
+                                        is more important than knowledge
+                                    </h1>
+                                    <div class="ps-4 mb-4 border-start border-4 border-success text-white fs-4">Together
+                                        we the people achieve more than any single person<br>could ever do alone.</div>
+                                    <a href="#" type="button" class="btn btn-success text-uppercase p-3">
+                                        <span>Getting Started</span>
+                                        <span class="d-inline-block p-1 bg-white ms-4">
+                                            <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-5">
+                                    <img src="assets/images/main/main-banner/siddharth.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container px-5">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-uppercase display-3 fw-bold text-white mb-5">
+                                        <span class="text-success">imagination</span>
+                                        is more important than knowledge
+                                    </h1>
+                                    <div class="ps-4 pb-5 border-start border-4 border-success text-white fs-4">Together
+                                        we the people achieve more than any single person<br>could ever do alone.</div>
+                                    <a href="#" type="button" class="btn btn-success text-uppercase p-3">
+                                        <span>Getting Started</span>
+                                        <span class="d-inline-block p-1 bg-white ms-4">
+                                            <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-5">
+                                    <img src="assets/images/main/main-banner/siddharth.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="row">
+                    <div class="col position-relative pe-5">
+                        <div class="position-absolute about-shape top-100 start-0 translate-middle-y p-5 z-n1">
+                            <div class="p-5">
+                                <div class="p-5"></div>
+                            </div>
+                        </div>
+                        <div class="about-img py-5 ms-5">
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                        </div>
+                        <div
+                            class="about-shape-ovlio position-absolute start-0 end-0 top-50 translate-middle-y py-5 z-n1">
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                            <div class="py-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 py-5">
+                        <div class="py-5">
+                            <h2 class="text-white text-uppercase fw-bold mb-5">
+                                Failure is the condiment That Gives
+                                <span class="text-success">Success</span>
+                            </h2>
+                            <p class="text-white mb-5">Spend more time focusing on the important aspects of your
+                                business.
+                                Turn to McCartney HR LLC in Brooklyn, NY for HR solutions. As an advanced virtual HR
+                                company, we are offering online HR systems that can be customized depending on your
+                                business needs.</p>
+                            <a href="#" type="button" class="btn btn-success text-uppercase p-3">
+                                <span>Getting Started</span>
+                                <span class="d-inline-block p-1 bg-white ms-4">
+                                    <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Experience -->
+        <section class="p-5">
+            <div class="container p-5">
+                <div class="py-5"></div>
+                <div class="row">
+                    <div class="col">
+                        <span class="text-success fs-5 fw-bold">MY EXPERIENCE</span>
+                        <br>
+                        <h2 class="text-uppercase text-white fw-bold">Experience and <span
+                                class="text-success">skill</span></h2>
+                    </div>
+                    <div class="col">
+                        <p class="text-white border-start border-4 border-success ps-5 fs-5">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.<br>Sint ratione reprehenderit, error qui enim sit ex provident
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-5 text-white px-5">
+                    <div class="col p-2">
+                        <span class="">2011 - 2014 (Ui designer)</span>
+                        <h5 class="text-uppercase my-3 text-success">Google Corporation.</h5>
+                        <p>All you need to do your best work together in one package works seamlessly computer</p>
+                    </div>
+                    <div class="col p-2">
+                        <span class="">2011 - 2014 (Ui designer)</span>
+                        <h5 class="text-uppercase my-3 text-success">Apple Product Co.</h5>
+                        <p>All you need to do your best work together in one package works seamlessly computer</p>
+                    </div>
+                    <div class="col p-2">
+                        <span class="">2011 - 2014 (Ui designer)</span>
+                        <h5 class="text-uppercase my-3 text-success">lead designer musicsoft</h5>
+                        <p>All you need to do your best work together in one package works seamlessly computer</p>
+                    </div>
+                    <div class="col p-2">
+                        <span class="">2011 - 2014 (Ui designer)</span>
+                        <h5 class="text-uppercase my-3 text-success">lBruno Mars As.</h5>
+                        <p>All you need to do your best work together in one package works seamlessly computer</p>
+                    </div>
+                </div>
+                <div class="row text-center text-white text-uppercase">
+                    <div class="col">
+                        <span class="d-inline-block p-5 border-5 border border-success rounded-circle mb-4">
+                            <div class="p-4 position-relative">
+                                <h4 class="position-absolute top-50 start-50 translate-middle">60%</h4>
+                            </div>
+                        </span>
+                        <h4>Branding Design</h4>
+                    </div>
+                    <div class="col">
+                        <span class="d-inline-block p-5 border-5 border border-success rounded-circle mb-4">
+                            <div class="p-4 position-relative">
+                                <h4 class="position-absolute top-50 start-50 translate-middle">70%</h4>
+                            </div>
+                        </span>
+                        <h4>UI & UX Design</h4>
+                    </div>
+                    <div class="col">
+                        <span class="d-inline-block p-5 border-5 border border-success rounded-circle mb-4">
+                            <div class="p-4 position-relative">
+                                <h4 class="position-absolute top-50 start-50 translate-middle">30%</h4>
+                            </div>
+                        </span>
+                        <h4>Web Design</h4>
+                    </div>
+                    <div class="col">
+                        <span class="d-inline-block p-5 border-5 border border-success rounded-circle mb-4">
+                            <div class="p-4 position-relative">
+                                <h4 class="position-absolute top-50 start-50 translate-middle">90%</h4>
+                            </div>
+                        </span>
+                        <h4>illustration</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="p-5">
+            <div class="container p-5">
+                <div class="row pb-5">
+                    <div class="col">
+                        <span class="text-success fs-5 fw-bold text-uppercase">what we do</span>
+                        <br>
+                        <h1 class="text-uppercase text-white fw-bold">Services and <span
+                                class="text-success">Solutions</span></h1>
+                    </div>
+                    <div class="col">
+                        <p class="border-start border-5 border-success ps-5 text-white fs-5">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.<br>Sint ratione reprehenderit, error qui enim sit ex provident
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="p-2 px-4">
+                            <div>
+                                <div class="card border-0 rounded-0">
+                                    <div class="card-body py-5">
+                                        <img src="assets/images/services/service1.svg">
+                                        <h4 class="card-title text-uppercase my-4 card-color-primary">design principales
+                                        </h4>
+                                        <p class="card-text card-color-secondary">Need a project completed by an expert?
+                                            Let's go! Access a Human Resources Consultant to answer questions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-2 px-4">
+                            <div>
+                                <div class="card border-0 rounded-0 active">
+                                    <div class="card-body py-5">
+                                        <img src="assets/images/services/service2.svg">
+                                        <h4 class="card-title text-uppercase my-4 card-color-primary">Unique Values</h4>
+                                        <p class="card-text card-color-secondary">Need a project completed by an expert?
+                                            Let's go! Access a Human Resources Consultant to answer questions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-2 px-4">
+                            <div>
+                                <div class="card border-0 rounded-0">
+                                    <div class="card-body py-5">
+                                        <img src="assets/images/services/service3.svg">
+                                        <h4 class="card-title text-uppercase my-4 card-color-primary">Style Components
+                                        </h4>
+                                        <p class="card-text card-color-secondary">Need a project completed by an expert?
+                                            Let's go! Access a Human Resources Consultant to answer questions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Progress -->
+        <section class="p-5 working-progress">
+            <div class="py-5"></div>
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-5">
+                        <span class="text-success fs-5 fw-bold text-uppercase">WORKING PROCESS</span>
+                        <br>
+                        <h1 class="text-uppercase text-white fw-bold">lastet working <span
+                                class="text-success">project</span></h1>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <p class="border-start border-5 border-success ps-5 text-white fs-4 me-5">Lorem ipsum dolor
+                                sit amet, consectetur<br>adipisicing elit. Sint ratione reprehenderit</p>
+                            <a href="#working-progress" class="mx-2 fs-2 border border-success p-1 px-2 text-success"
+                                role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-short px-1"></i></a>
+                            <a href="#working-progress" class="mx-2 fs-2 border border-success p-1 px-2 text-success"
+                                role="button" data-bs-slide="next"><i class="bi bi-arrow-right-short px-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-auto my-5 justify-content-center text-center">
+                    <div id="working-progress" class="multi-carousel carousel slide">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0">
+                                        <img src="assets/images/working-progress/project2.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0">
+                                        <img src="assets/images/working-progress/project3.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0">
+                                        <img src="assets/images/working-progress/project4.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials -->
+        <section class="p-5">
+            <div class="container p-5">
+                <div class="row pb-5">
+                    <div class="col-5">
+                        <span class="text-success fs-5 fw-bold text-uppercase">testimonials</span>
+                        <br>
+                        <h1 class="text-uppercase text-white fw-bold">Happy Clients TO <span
+                                class="text-success">says</span></h1>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <p class="border-start border-5 border-success ps-5 text-white fs-4 me-5">Lorem ipsum dolor
+                                sit amet, consectetur<br>adipisicing elit. Sint ratione reprehenderit</p>
+                            <a href="#testimonials" class="mx-2 fs-2 border border-success p-1 px-2 text-success"
+                                role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-short px-1"></i></a>
+                            <a href="#testimonials" class="mx-2 fs-2 border border-success p-1 px-2 text-success"
+                                role="button" data-bs-slide="next"><i class="bi bi-arrow-right-short px-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col px-5">
+                        <div class="px-5">
+                            <div id="testimonials" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row align-items-center">
+                                            <div class="col-2">
+                                                <img src="assets/images/testimonIals/testimonial1.jpg"
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="col text-white">
+                                                <div>
+                                                    <img src="assets/images/testimonIals/quote.png">
+                                                </div>
+                                                <div class="my-3">
+                                                    <h4 class="text-uppercase">
+                                                        Gilroy is a great and super-professional service provider, which
+                                                        brought new technologes, new methodology, and a fresh
+                                                        perspective to our project
+                                                    </h4>
+                                                </div>
+                                                <div>
+                                                    <span>Jack Metiyo Shina, NYC, USA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-2">
+                                                <img src="assets/images/testimonIals/testimonial1.jpg"
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="col text-white">
+                                                <div>
+                                                    <img src="assets/images/testimonIals/quote.png">
+                                                </div>
+                                                <div class="my-3">
+                                                    <h4 class="text-uppercase">
+                                                        Gilroy is a great and super-professional service provider, which
+                                                        brought new technologes, new methodology, and a fresh
+                                                        perspective to our project
+                                                    </h4>
+                                                </div>
+                                                <div>
+                                                    <span>Jack Metiyo Shina, NYC, USA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications -->
+        <section class="p-5">
+            <div class="container p-5">
+                <div class="row pb-5">
+                    <div class="col">
+                        <span class="text-success fs-5 fw-bold text-uppercase">SPECIFICATION</span>
+                        <br>
+                        <h1 class="text-uppercase text-white fw-bold">All OUR PAYMENT
+                            <span class="text-success">options</span>
+                        </h1>
+                    </div>
+                    <div class="col">
+                        <p class="border-start border-5 border-success ps-5 text-white fs-4 me-5">Lorem ipsum dolor
+                            it amet, consectetur<br>adipisicing elit. Sint ratione reprehenderit
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-5 text-center">
+                    <div class="col">
+                        <div class="card p-3 rounded-0">
+                            <div class="card-body p-5">
+                                <div>
+                                    <img src="assets/images/services/service1.svg">
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="card-color-primary text-uppercase fs-3">Influencer</h4>
+                                </div>
+                                <p class="card-color-secondary">best for small investors</p>
+                                <hr class="my-4 text-white">
+                                <h4 class="card-color-primary fs-1">$104</h4>
+                                <p class="card-color-secondary mb-4">Per Month</p>
+                                <a href="#" type="button" class="btn btn-success text-uppercase p-3 card-btn">
+                                    <span class="text-white">Read More</span>
+                                    <span class="d-inline-block p-1 bg-white ms-4">
+                                        <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-3 rounded-0 active">
+                            <div class="card-body p-5">
+                                <div>
+                                    <img src="assets/images/services/service2.svg">
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="card-color-primary text-uppercase fs-3">AGENCY</h4>
+                                </div>
+                                <p class="card-color-secondary">best for small investors</p>
+                                <hr class="my-4 text-white">
+                                <h4 class="card-color-primary fs-1">$204</h4>
+                                <p class="card-color-secondary mb-4">Per Month</p>
+                                <a href="#" type="button" class="btn btn-success text-uppercase p-3 card-btn">
+                                    <span class="text-white">Read More</span>
+                                    <span class="d-inline-block p-1 bg-white ms-4">
+                                        <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-3 rounded-0">
+                            <div class="card-body p-5">
+                                <div>
+                                    <img src="assets/images/services/service3.svg">
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="card-color-primary text-uppercase fs-3">Enterprice</h4>
+                                </div>
+                                <p class="card-color-secondary">best for small investors</p>
+                                <hr class="my-4 text-white">
+                                <h4 class="card-color-primary fs-1">Let's chart</h4>
+                                <p class="card-color-secondary mb-4">Per Month</p>
+                                <a href="#" type="button" class="btn btn-success text-uppercase p-3 card-btn">
+                                    <span class="text-white">Read More</span>
+                                    <span class="d-inline-block p-1 bg-white ms-4">
+                                        <i class="fa-solid fa-chevron-right p-1 px-2 text-success"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="p-5">
+            <div class="container p-5 news">
+                <div class="row">
+                    <div class="col-5">
+                        <span class="text-success fs-5 fw-bold text-uppercase">RECENT NEWS DESK</span>
+                        <br>
+                        <h1 class="text-uppercase text-white fw-bold">lastet news &
+                            <span class="text-success">blogs</span>
+                        </h1>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <p class="border-start border-5 border-success ps-5 text-white fs-4 me-5">Lorem ipsum dolor
+                                it amet, consectetur<br>adipisicing elit. Sint ratione reprehenderit
+                            </p>
+                            <a href="#news" class="mx-2 fs-2 border border-success p-1 px-2 text-success" role="button"
+                                data-bs-slide="prev"><i class="bi bi-arrow-left-short px-1"></i></a>
+                            <a href="#news" class="mx-2 fs-2 border border-success p-1 px-2 text-success" role="button"
+                                data-bs-slide="next"><i class="bi bi-arrow-right-short px-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-auto my-5 justify-content-center">
+                    <div id="news" class="multi-carousel carousel slide">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0 border-0 bg-white">
+                                        <img src="assets/images/news/team__1.png">
+                                        <div class="px-5 py-4">
+                                            <div>
+                                                <span>September 28, 2019</span>
+                                            </div>
+                                            <div class="my-4 custom">
+                                                <a href="#"
+                                                    class="text-decoration-none fw-bold text-uppercase fs-5">Addiction
+                                                    When
+                                                    Gambling Becomes...</a>
+                                            </div>
+                                            <div>
+                                                <a class="icon-link icon-link-hover text-decoration-none align-items-center text-success"
+                                                    href="#">
+                                                    <i class="bi-arrow-right-short fs-5"></i>
+                                                    <span class="bi w-100 h-100">READ MORE</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0 border-0 bg-white">
+                                        <img src="assets/images/news/team__2.png">
+                                        <div class="px-5 py-4">
+                                            <div>
+                                                <span>September 28, 2019</span>
+                                            </div>
+                                            <div class="my-4 custom">
+                                                <a href="#"
+                                                    class="text-decoration-none fw-bold text-uppercase fs-5">Addiction
+                                                    When
+                                                    Gambling Becomes...</a>
+                                            </div>
+                                            <div>
+                                                <a class="icon-link icon-link-hover text-decoration-none align-items-center text-success"
+                                                    href="#">
+                                                    <i class="bi-arrow-right-short fs-5"></i>
+                                                    <span class="bi w-100 h-100">READ MORE</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-4 p-2">
+                                    <div class="card rounded-0 border-0 bg-white">
+                                        <img src="assets/images/news/team__4.png">
+                                        <div class="px-5 py-4">
+                                            <div>
+                                                <span>September 28, 2019</span>
+                                            </div>
+                                            <div class="my-4 custom">
+                                                <a href="#"
+                                                    class="text-decoration-none fw-bold text-uppercase fs-5">Addiction
+                                                    When
+                                                    Gambling Becomes...</a>
+                                            </div>
+                                            <div>
+                                                <a class="icon-link icon-link-hover text-decoration-none align-items-center text-success"
+                                                    href="#">
+                                                    <i class="bi-arrow-right-short fs-5"></i>
+                                                    <span class="bi w-100 h-100">READ MORE</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subscribe -->
+        <section class="p-5 text-center subscribe">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="py-4">
+                            <span class="text-success fs-5 fw-bold text-uppercase">RECENT NEWS DESK</span>
+                            <br>
+                            <h1 class="text-uppercase text-white fw-bold">lastet news &
+                                <span class="text-success">blogs</span>
+                            </h1>
+                        </div>
+                        <div class="">
+                            <form action="" method="post" class="">
+                                <input type="email"
+                                    class="form-control d-inline-block w-auto py-3 px-4 me-2 shadow-none border border-1 border-success bg-dark placeholder-light text-white"
+                                    id="email" placeholder="Email">
+                                <button href="#" type="submit" class="btn btn-success text-uppercase p-3">
+                                    <span>subscribe</span>
+                                    <span class="d-inline-block px-1  bg-white ms-4">
+                                        <i class="fa-solid fa-chevron-right px-2 text-success"></i>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands -->
+        <section class="brands p-5">
+            <div class="container p-5">
+                <div class="row mx-auto my-5 justify-content-center">
+                    <div id="brands" class="multi-carousel carousel slide">
+                        <div class="carousel-inner text-center" role="listbox" data-bs-ride="true">
+                            <div class="carousel-item active">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/01.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/02.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/03.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/1.svg">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/01.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <img src="assets/images/brands/02.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-2 text-center">
+        <!-- Navigation Bar -->
+        <section class="custom py-4">
+            <ul class="nav justify-content-center white">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Contact Me</a>
+                </li>
+            </ul>
+        </section>
+        <section class="pb-5">
+            <span class="text-white">Copyright &copy; 2019 by <span class="text-success">QuomodoTheme</span> all right
+                reserved</span>
+        </section>
+    </footer>
+
+    <span class="position-fixed bottom-0 end-0 translate-middle">
+        <a href="#first" type="button" class="btn btn-success text-uppercase p-3">
+            <span><i class="fa-solid fa-angle-up px-1"></i></span>
+        </a>
+    </span>
+
+    <script>
+        let workingProgress = document.querySelectorAll('.working-progress .multi-carousel .carousel-item')
+
+        workingProgress.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = workingProgress[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <script>
+        let news = document.querySelectorAll('.news .multi-carousel .carousel-item')
+
+        news.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = news[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <script>
+        let brands = document.querySelectorAll('.brands .multi-carousel .carousel-item')
+
+        brands.forEach((el) => {
+            const minPerSlide = 6;
+            let next = el.nextElementSibling;
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = brands[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navigator-bar" aria-labelledby="navigator-bar"
+        data-bs-theme="dark">
+        <div class="offcanvas-body p-0 pb-5">
+            <div class="d-flex text-center border border-1 border-black">
+                <div class="col border-end border-1 border-black py-3">
+                    <a href="tel:7">
+                        <i class="bi bi-telephone"></i>
+                    </a>
+                </div>
+                <div class="col border-end border-1 border-black py-3">
+                    <a href="#">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                </div>
+                <div class="col py-3">
+                    <a type="button" class="ms-auto text-decoration-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Close</a>
+                </div>
+            </div>
+            <div class="border border-1 border-black">
+                <div class="accordion accordion-flush custom" id="accordionFlushExample">
+                    <div class="accordion-item white">
+                        <div class="accordion-header">
+                            <a class="accordion-button collapsed text-uppercase bg-transparent shadow-none text-decoration-none custom-underline-nav custom-transform-growing custom-underline-color-success"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">Home
+                            </a>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0">
+                                <ol class="list-group p-0 rounded-0 border-black">
+                                    <li class="list-group-item rounded-0 border-black">
+                                        <a href="#">Home 1</a>
+                                    </li>
+                                    <li class="list-group-item rounded-0 border-black">A list item</li>
+                                    <li class="list-group-item rounded-0 border-black">A list item</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 border-black custom">
+                <div class="white">
+                    <a href="#"
+                        class="p-4 d-block text-uppercase position-relative bg-transparent shadow-none text-decoration-none custom-underline-nav custom-transform-growing custom-underline-color-success">About</a>
+                </div>
+            </div>
+            <div class="border border-1 border-black custom">
+                <div class="white">
+                    <a href="#"
+                        class="p-4 d-block text-uppercase position-relative bg-transparent shadow-none text-decoration-none custom-underline-nav custom-transform-growing custom-underline-color-success">Service</a>
+                </div>
+            </div>
+            <div class="border border-1 border-black custom">
+                <div class="white">
+                    <a href="#"
+                        class="p-4 d-block text-uppercase position-relative bg-transparent shadow-none text-decoration-none custom-underline-nav custom-transform-growing custom-underline-color-success">Portfolio</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end bg-black border-0 py-5 px-4" data-bs-theme="dark" tabindex="-1"
+        id="about-header-page" aria-labelledby="about-header-page-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/images/header/logo.png"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="pb-5">
+                Siddharth ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit numquam repellendus vel
+                deleniti commodi voluptatem quo quia dolor autem neque consectetur, officia quae necessitatibus
+                praesentium cumque? Ullam qui voluptate reiciendis.
+            </div>
+            <div>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-facebook-f p-2 border border-white rounded-2 me-1"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-twitter p-2 border border-white rounded-2 me-1"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-linkedin-in p-2 border border-white rounded-2 me-1"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-instagram p-2 border border-white rounded-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

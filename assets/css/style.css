@@ -1,0 +1,173 @@
+body{
+    font-family: "Rubik";
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald";
+}
+.custom-underline-color-success{
+    --custom-underline-color: var(--bs-success);
+}
+.custom-underline-nav::before{
+    content: '';
+    transform-origin: left;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-bottom: 2px solid var(--custom-underline-color);
+    transition: all 0.2s ease;
+}
+.custom-transform-growing::before{
+    transform: scaleX(0%);
+    opacity: 0;
+}
+.custom-transform-growing:hover::before,
+.custom-transform-growing:focus::before{
+    transform: scaleX(100%);
+    opacity: 1;
+}
+.placeholder-light::placeholder{
+    color: var(--bs-light);
+}
+.placeholder-light:focus::placeholder{
+    color: var(--bs-dark);
+}
+.main-banner{
+    background-image: url("../images/main/main-banner/wlc-bg1.jpg");
+}
+.carousel-indicators{
+    top: 50%;
+    right: 0%;
+    left: auto;
+    bottom: auto;
+}
+.carousel-indicators [data-bs-target]{
+    height: 30px;
+    opacity: 1;
+    background-color: transparent;
+    transition: all .6s ease;
+    border: 1px solid var(--bs-success);
+    text-indent: 0;
+    color: var(--bs-success);
+}
+.carousel-indicators .active{
+    background-color: var(--bs-success);
+    color: white;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--bs-success);
+}
+.carousel-fade .carousel-item{
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.carousel-fade .carousel-item.active{
+    transition: all 0s ease;
+}
+.about-img{
+    background-image: url("../images/about/temp/about1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-shape{
+    background-image: url("../images/about/about-shape.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.about-shape-ovlio{
+    background-image: url("../images/about/about-bg-shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card{
+    background-color: rgb(20, 20, 20);
+    transition: all 0.5s ease;
+}
+.card:hover,
+.card.active{
+    background-color: var(--bs-success);
+
+}
+.card .card-color-primary,
+.card .card-color-primary{
+    color: var(--bs-success);
+}
+.card .card-color-secondary,
+.card .card-color-secondary{
+    color: var(--bs-secondary);
+}
+.card.active .card-color-primary,
+.card:hover .card-color-primary,
+.card.active .card-color-secondary,
+.card:hover .card-color-secondary{
+    color: var(--bs-white);
+}
+.card .card-btn,
+.card .card-btn{
+    background-color: var(--bs-success);
+}
+.card.active .card-btn,
+.card:hover .card-btn{
+    background-color: darkgreen;
+}
+
+@media (max-width: 767px) {
+	    .multi-carousel .carousel-inner .carousel-item > div {
+			display: none;
+		}
+	    .multi-carousel .carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+	.multi-carousel .carousel-inner .carousel-item.active,
+	.multi-carousel .carousel-inner .carousel-item-next,
+	.multi-carousel .carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+	@media (min-width: 768px) {
+
+		.multi-carousel .carousel-inner .carousel-item-end.active,
+		.multi-carousel .carousel-inner .carousel-item-next {
+			transform: translateX(33.3333%);
+		}
+
+		.multi-carousel .carousel-inner .carousel-item-start.active, 
+		.multi-carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-33.3333%);
+		}
+		.brands .multi-carousel .carousel-inner .carousel-item-end.active,
+		.brands .multi-carousel .carousel-inner .carousel-item-next {
+			transform: translateX(50%);
+		}
+
+		.brands .multi-carousel .carousel-inner .carousel-item-start.active, 
+		.brands .multi-carousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-50%);
+		}
+	}
+	.multi-carousel .carousel-inner .carousel-item-end,
+	.multi-carousel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+.custom a{
+    color: var(--bs-dark);
+    transition: all 0.5s ease;
+}
+.custom .white a{
+    color: var(--bs-white);
+    transition: all 0.5s ease;
+}
+.custom a:hover{
+    color: var(--bs-success);
+}
+.custom .white a:hover{
+    color: var(--bs-success);
+}
+.subscribe{
+    background-image: url("../images/subscribe/map.png");
+}
