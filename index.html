@@ -23,40 +23,47 @@
 </head>
 
 <body class="bg-black position-relative">
+    <!-- Header -->
     <header class="position-absolute top-0 start-0 end-0" id="first">
+        <!-- Details -->
         <section class="bg-dark d-none d-lg-block">
             <div class="container">
-                <div class="row justify-content-center align-items-center text-white">
-                    <div class="col-5 d-flex align-items-center">
-                        <span class="d-inline-block p-3 bg-success me-2"><i class="bi bi-chat-left"></i></span>
-                        <span class="me-5 pe-5">Fox News Anchor Bret Baier...</span>
-                        <span class="d-flex align-items-center">
-                            <i class="bi bi-arrow-left-short fs-4"></i>
-                            <span class="d-inline-block mx-2 vr"></span>
-                            <i class="bi bi-arrow-right-short fs-4"></i>
-                        </span>
-                    </div>
-                    <div class="col-5 text-end">
-                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a class="icon-link icon-link-hover text-white bg-success p-3 px-4 align-items-center text-decoration-none"
-                            href="#">
-                            <span class="bi d-inline-block"><i class="fa-solid fa-angles-right d-block"></i></span>
-                            <span class="ms-2">
-                                Icon link
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-5">
+                        <div class="text-white d-flex align-items-center">
+                            <span class="d-inline-block p-3 bg-success me-2"><i class="bi bi-chat-left"></i></span>
+                            <span class="me-5 pe-5">Fox News Anchor Bret Baier...</span>
+                            <span class="d-flex align-items-center">
+                                <i class="bi bi-arrow-left-short fs-4"></i>
+                                <span class="d-inline-block mx-2 vr"></span>
+                                <i class="bi bi-arrow-right-short fs-4"></i>
                             </span>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="text-white text-end">
+                            <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a class="d-inline-block p-3 border-dark-subtle border-start text-white" href="#"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a class="icon-link icon-link-hover text-white bg-success p-3 px-4 align-items-center text-decoration-none"
+                                href="#">
+                                <span class="bi d-inline-block"><i class="fa-solid fa-angles-right d-block"></i></span>
+                                <span class="ms-2">
+                                    Icon link
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Main Navigation -->
         <section class="border-bottom border-secondary" style="--bs-border-opacity: .5;">
             <div class="container">
                 <div class="row justify-content-center">
@@ -69,10 +76,14 @@
 
                     </div>
                     <div class="col-6 d-none d-md-block">
-                        <ul class="nav justify-content-center custom-underline-nav">
+                        <ul class="nav justify-content-center custom-underline-nav dropdown" data-bs-theme="dark">
                             <li class="nav-item pt-2">
-                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
-                                    href="#">Home</a>
+                                <button
+                                    class="nav-link dropdown-toggle py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing" type="button" data-bs-toggle="dropdown" aria-expanded="false">Home</button>
+                                <ul class="dropdown-menu text-uppercase py-4">
+                                    <li class="mb-3"><a class="dropdown-item" href="#">Home 01</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 02</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item pt-2 ms-1">
                                 <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
@@ -87,8 +98,15 @@
                                     href="#">Portfolio</a>
                             </li>
                             <li class="nav-item pt-2 ms-1">
-                                <a class="nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing"
-                                    href="#">Pages</a>
+                                <button class="dropdown-toggle nav-link py-4 text-white text-uppercase custom-underline-nav position-relative custom-underline-color-success custom-transform-growing" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
+                                <ul class="dropdown-menu text-uppercase py-4">
+                                    <li class="mb-3"><a class="dropdown-item" href="#">About</a></li>
+                                    <li class="mb-3"><a class="dropdown-item" href="#">Portfolio</a></li>
+                                    <li class="mb-3"><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                                    <li class="mb-3"><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li class="mb-3"><a class="dropdown-item" href="#">Single Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -806,7 +824,8 @@
                                         </div>
                                         <div class="col-lg-3 col-12">
                                             <div class="text-center text-lg-start">
-                                                <button href="#" type="submit" class="btn btn-success text-uppercase p-3">
+                                                <button href="#" type="submit"
+                                                    class="btn btn-success text-uppercase p-3">
                                                     <span>subscribe</span>
                                                     <span class="d-inline-block bg-white ms-4">
                                                         <i class="fa-solid fa-chevron-right px-2 text-success"></i>
